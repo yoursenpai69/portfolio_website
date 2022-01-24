@@ -1,0 +1,44 @@
+@import "../Styles/Variables/Variables.scss";
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+p {
+  color: $prim-teal;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: -1px;
+  font-weight: 500;
+  padding: 370px 0;
+}
+.arrow {
+  color: $prim-pink;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 50px;
+  height: 50px;
+  animation: bounce 1200ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+}
+
+.text-name {
+  color: $prim-pink;
+}
+.intro {
+  flex: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 100vh;
+}
+.intro::-webkit-scrollbar {
+  display: none;
+}
