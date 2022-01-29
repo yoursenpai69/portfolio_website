@@ -21,12 +21,26 @@ p {
   padding: 370px 0;
 }
 
+.text-cont {
+  height: 100vh;
+}
+
+.arrow-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .arrow {
   color: #f30067;
-  position: fixed;
   bottom: 0;
-  left: 50%;
-  margin-left: -20px;
+  bottom: 50px;
   width: 50px;
   height: 50px;
   -webkit-animation: bounce 1200ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -42,16 +56,14 @@ p {
   -webkit-box-flex: 0.6;
       -ms-flex: 0.6;
           flex: 0.6;
+  overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow-y: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 100vh;
@@ -59,5 +71,13 @@ p {
 
 .intro::-webkit-scrollbar {
   display: none;
+}
+
+.sections {
+  width: 100%;
+}
+
+.sections > * {
+  height: 100vh;
 }
 /*# sourceMappingURL=Intro.css.map */

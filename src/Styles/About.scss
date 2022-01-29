@@ -1,0 +1,93 @@
+@import "../Styles/Variables/Variables.scss";
+
+.about-title {
+  margin-top: 50px;
+  text-align: center;
+  color: $prim-pink;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.about-cont {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 50px 0;
+  padding: 0;
+  text-align: center;
+}
+.diff-rec {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: $sec-black;
+
+  border-radius: 20px;
+  width: 100%;
+  height: 670px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.col-1,
+.col-2,
+.col-3 {
+  background-color: $sec-black;
+  color: $prim-pink;
+  text-align: center;
+
+  border: $prim-pink 1px solid;
+}
+.col-1 {
+  border-top-left-radius: 30px;
+}
+.col-3 {
+  border-top-right-radius: 30px;
+}
+.col-title {
+  color: $prim-pink;
+  font-size: 1.8em;
+  margin-top: 20px;
+  background-color: $sec-black;
+}
+
+.svg-res,
+.svg-cre,
+.svg-dyn {
+  background-color: $sec-black;
+
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.svg-dyn {
+  margin-top: 25px;
+}
+.col-subs {
+  font-weight: 400;
+  background-color: $sec-black;
+  color: $prim-pink;
+  margin-top: 10px;
+}
+.sub-exp {
+  background-color: $sec-black;
+  text-align: center;
+  margin-top: 20px;
+  color: $prim-white;
+}
+.lang,
+.dev,
+.oth {
+  font-weight: 400;
+  background-color: $sec-black;
+  color: $prim-pink;
+  margin-top: 30px;
+}
+.dev-list {
+  margin-top: 10px;
+  background-color: $sec-black;
+}
+.dev-list > li {
+  background-color: $sec-black;
+  list-style: none;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: $prim-white;
+}

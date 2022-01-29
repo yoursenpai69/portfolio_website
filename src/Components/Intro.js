@@ -1,6 +1,9 @@
 import React from 'react';
 import '../Styles/Intro.css';
 import { Icon } from '@iconify/react';
+import About from '../Components/About';
+import Work from '../Components/Work';
+import Contact from '../Components/Contact';
 const Intro = () => {
 
   return(
@@ -10,7 +13,12 @@ const Intro = () => {
             you can<br/> call me Vijay. I love building websites and <br/> Deep Learning.</p>
           </div>
           <div className='arrow-div'>
-            <Icon icon="akar-icons:arrow-down" className='arrow'/>
+            <a href="#about-me"><Icon icon="akar-icons:arrow-down" className='arrow'/></a>
+          </div>
+          <div className='sections'>
+            <About />
+            <Work />
+            <Contact />
           </div>
       </div>
   );
