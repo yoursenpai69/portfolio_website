@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap");
+.work {
+  position: relative;
+}
+
 .work-title {
   margin-top: 100px;
   text-align: center;
   color: #f30067;
   font-size: 2.5em;
   font-weight: 500;
-  top: 80px;
-}
-
-.work {
-  position: relative;
 }
 
 .projects {
@@ -24,6 +23,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   gap: 30px;
+  margin-top: 0;
 }
 
 .proj-cont {
@@ -154,7 +154,7 @@
   position: absolute;
   z-index: 2;
   color: #f30067;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.7em;
   text-align: center;
   background-color: transparent;
@@ -178,5 +178,19 @@
   position: absolute;
   bottom: 80px;
   right: 70px;
+}
+
+.hover2 > img {
+  height: 50%;
+}
+
+.hover2 > h2 {
+  top: 40px;
+}
+
+.hover2 .git-hover,
+.hover3 .git-hover {
+  left: 130px;
+  bottom: 95px;
 }
 /*# sourceMappingURL=Work.css.map */

@@ -1,16 +1,15 @@
 @import "../Styles/Variables/Variables.scss";
-
+.work {
+  position: relative;
+}
 .work-title {
   margin-top: 100px;
   text-align: center;
   color: $prim-pink;
   font-size: 2.5em;
   font-weight: 500;
-  top: 80px;
 }
-.work {
-  position: relative;
-}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -143,7 +142,7 @@
   position: absolute;
   z-index: 2;
   color: $prim-pink;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.7em;
   text-align: center;
   background-color: transparent;
@@ -165,4 +164,15 @@
   position: absolute;
   bottom: 80px;
   right: 70px;
+}
+.hover2 > img {
+  height: 50%;
+}
+.hover2 > h2 {
+  top: 40px;
+}
+.hover2 .git-hover,
+.hover3 .git-hover {
+  left: 130px;
+  bottom: 95px;
 }
