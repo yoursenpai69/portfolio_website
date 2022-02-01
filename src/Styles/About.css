@@ -55,7 +55,7 @@
 .svg-res,
 .svg-cre,
 .svg-dyn {
-  background-color: #262626;
+  background-color: transparent;
   display: block;
   margin: auto;
   margin-top: 80px;

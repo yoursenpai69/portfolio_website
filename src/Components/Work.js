@@ -1,21 +1,47 @@
 import React, { useEffect, useState } from "react";
 import "../Styles/Work.scss";
 import { Icon } from "@iconify/react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Work = () => {
   const [firstHover, setHover1] = useState(false);
   const [secondHover, setHover2] = useState(false);
   const [thirdHover, setHover3] = useState(false);
+
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+  const animation = useAnimation();
   useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+    if (inView) {
+      animation.start({
+        x: 0,
+        opacity: 1,
+        scale: 1,
+        transiton: {
+          type: "spring",
+
+          duration: 3,
+          bounce: 0.25,
+          ease: "easeIn",
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+        scale: 0,
+        x: "100vh",
+      });
+    }
+  }, [animation, inView]);
   return (
-    <div className="work" id="my-work" data-aos="fade-up">
+    <div className="work" id="my-work">
       <h1 className="work-title">My Work</h1>
-      <div className="projects">
-        <div
+      <div ref={ref} className="projects">
+        <motion.div
+          animate={animation}
           className="proj-grid"
           onMouseEnter={() => setHover1(true)}
           onMouseLeave={() => setHover1(false)}
@@ -57,12 +83,14 @@ const Work = () => {
             <div className="proj-hover hover1">
               <img src={require("../Assets/snap1.PNG")} alt="none" />
               <h2>Portfolio Website</h2>
-              <Icon
-                icon="bx:bx-link-external"
-                width="27"
-                height="27"
-                className="proj-ext ext-hover"
-              />
+              <a href="start-page">
+                <Icon
+                  icon="bx:bx-link-external"
+                  width="27"
+                  height="27"
+                  className="proj-ext ext-hover"
+                />
+              </a>
               <a
                 href="https://github.com/yoursenpai69/portfolio_website.git"
                 target="_blank"
@@ -77,8 +105,9 @@ const Work = () => {
               </a>
             </div>
           )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          animate={animation}
           className="proj-grid"
           onMouseEnter={() => setHover2(true)}
           onMouseLeave={() => setHover2(false)}
@@ -129,8 +158,9 @@ const Work = () => {
               </a>
             </div>
           )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          animate={animation}
           className="proj-grid"
           onMouseEnter={() => setHover3(true)}
           onMouseLeave={() => setHover3(false)}
@@ -178,7 +208,7 @@ const Work = () => {
               </a>
             </div>
           )}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
