@@ -8,12 +8,15 @@
   float: left;
   margin-top: 100px;
   margin-left: 40px;
-  position: absolute;
-  top: 400px;
+  position: fixed;
+  bottom: 180px;
+  background-color: transparent;
+  z-index: 2;
 }
 .link-icon {
   margin: 16px;
   color: $sakura;
+  background-color: transparent;
 }
 .link-comp {
   flex: 0.2;
@@ -21,8 +24,14 @@
   position: relative;
 }
 .line {
+  stroke-width: 3px;
   position: fixed;
-  top: 350px;
+  bottom: 0;
+  z-index: 2;
+}
+.line-div {
+  position: absolute;
+  bottom: 0;
 }
 #codepen:hover,
 #linkedin:hover,
@@ -31,4 +40,7 @@
   color: $prim-pink;
   transform: translateY(-0.25em);
   transition: all 0.45s;
+}
+.link-icons > a {
+  background-color: transparent;
 }

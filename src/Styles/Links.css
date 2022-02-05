@@ -13,13 +13,16 @@
   float: left;
   margin-top: 100px;
   margin-left: 40px;
-  position: absolute;
-  top: 400px;
+  position: fixed;
+  bottom: 180px;
+  background-color: transparent;
+  z-index: 2;
 }
 
 .link-icon {
   margin: 16px;
   color: #ffb7c5;
+  background-color: transparent;
 }
 
 .link-comp {
@@ -31,8 +34,15 @@
 }
 
 .line {
+  stroke-width: 3px;
   position: fixed;
-  top: 350px;
+  bottom: 0;
+  z-index: 2;
+}
+
+.line-div {
+  position: absolute;
+  bottom: 0;
 }
 
 #codepen:hover,
@@ -44,5 +54,9 @@
           transform: translateY(-0.25em);
   -webkit-transition: all 0.45s;
   transition: all 0.45s;
+}
+
+.link-icons > a {
+  background-color: transparent;
 }
 /*# sourceMappingURL=Links.css.map */

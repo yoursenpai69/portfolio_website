@@ -1,6 +1,7 @@
 @import "../Styles/Variables/Variables.scss";
 .navbar {
   flex: 0.2;
+  z-index: 1;
 }
 .navbar-links {
   float: right;
@@ -14,6 +15,7 @@
   margin-top: 230px;
   position: fixed;
   right: 0;
+  z-index: 1;
 }
 .nav-link {
   text-decoration: none;
@@ -25,9 +27,25 @@
 .nav-link:hover {
   color: $prim-pink;
 }
+.navbar-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  position: relative;
+  z-index: 1;
+}
 .nav-line {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
+}
+.line-main {
+  stroke-width: 3px;
   position: fixed;
-  left: 0;
 }
 .button-neon {
   cursor: pointer;
