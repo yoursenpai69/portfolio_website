@@ -5,11 +5,11 @@ import About from '../Components/About';
 import Work from '../Components/Work';
 import Contact from '../Components/Contact';
 import { motion } from "framer-motion";
-const Intro = () => {
 
+const Intro = () => {
   return(
       <div className='intro' id='start-page'>
-          <motion.div className='text-cont' id='sample' initial={{opacity:0}} animate={{opacity:1}} transition={{duration: 2, ease:'easeIn'}}>
+          <motion.div  className='text-cont' id="home" initial={{opacity:0}} animate={{opacity:1}} transition={{duration: 2, ease:'easeIn'}}>
             <p>Hello, I'm <span className='text-name'>Vijaya raghavan</span>,
             you can<br/> call me Vijay. I love building websites and <br/> Deep Learning.</p>
           </motion.div>

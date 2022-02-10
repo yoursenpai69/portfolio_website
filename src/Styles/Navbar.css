@@ -4,6 +4,7 @@
       -ms-flex: 0.2;
           flex: 0.2;
   z-index: 1;
+  background-color: #323232;
 }
 
 .navbar-links {

@@ -33,7 +33,11 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item button">
-            <a href="#sample" className="nav-link button-neon">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1764gdBNgigY3sh3Oq9YJpMcJyif1zgSn"
+              download
+              className="nav-link button-neon"
+            >
               Resume
             </a>
           </li>

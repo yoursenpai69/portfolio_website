@@ -12,6 +12,10 @@
   }
 }
 
+.intro {
+  background-color: #323232;
+}
+
 p {
   color: #08d9d6;
   font-size: 2.5em;

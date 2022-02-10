@@ -10,7 +10,7 @@ const App = () => {
       {/* side bar with links */}
       <Links />
       {/* Mid section with some text */}
-      <Intro />
+      <Intro id="home" />
       {/* Nav bar */}
       <Navbar />
     </div>

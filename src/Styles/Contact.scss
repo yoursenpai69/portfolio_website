@@ -13,7 +13,7 @@
   font-weight: 500;
 }
 .contact > form {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,14 +21,62 @@
   position: relative;
   top: 20px;
 }
-.footer > h4 {
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer > h2 {
   position: absolute;
-  bottom: 0;
+  bottom: 45px;
   color: $prim-pink;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 10px;
   width: 100%;
   text-align: center;
 }
+.footer > h3 {
+  position: absolute;
+  bottom: 25px;
+  color: $sakura;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1em;
+  width: 100%;
+}
+.to-top {
+  color: $sakura;
+  position: absolute;
+  bottom: 100px;
+  cursor: pointer;
+}
+.to-top:hover {
+  color: $prim-pink;
+  transform: translateY(-0.25em);
+  transition: all 0.45s;
+}
+.submit {
+  padding: 5px 18px;
+  margin-top: 10px;
+  border-radius: 7px;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: $sec-black;
+  background-color: $prim-pink;
+  border: 2px solid $prim-pink;
+  cursor: pointer;
 
+  &:hover {
+    border: 2px solid $prim-pink;
+    background-color: $prim-black;
+    color: $prim-pink;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+}
 .name,
 .eMail,
 .message {
@@ -41,4 +89,31 @@
   display: block;
   font-size: 1em;
   color: $prim-teal;
+  background-color: $sec-black;
+  &:focus {
+    outline: none;
+  }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $sec-black inset !important;
+  -webkit-text-fill-color: $prim-teal !important;
+  box-shadow: 0 0 0 30px $sec-black inset !important;
+}
+::-webkit-input-placeholder {
+  color: #d2d2d2;
+}
+::-moz-placeholder {
+  color: #d2d2d2;
+}
+:-ms-input-placeholder {
+  color: #d2d2d2;
+}
+:-moz-placeholder {
+  color: #d2d2d2;
+}
+.message {
+  height: 150px;
 }
