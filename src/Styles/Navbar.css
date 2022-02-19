@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap");
+/**
+*
+* Testing
+*
+**/
 .navbar {
   -webkit-box-flex: 0.2;
       -ms-flex: 0.2;
           flex: 0.2;
   z-index: 1;
   background-color: #323232;
+}
+
+.hamburger {
+  display: none;
 }
 
 .navbar-links {
@@ -25,6 +34,13 @@
   position: fixed;
   right: 0;
   z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .navbar-links {
+    font-size: 1.2em;
+    margin-right: 40px;
+  }
 }
 
 .nav-link {
@@ -63,6 +79,12 @@
   top: 0;
   right: 0;
   margin-right: 50px;
+}
+
+@media (max-width: 1024px) {
+  .nav-line {
+    margin-right: 10px;
+  }
 }
 
 .line-main {

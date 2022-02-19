@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap");
+/**
+*
+* Testing
+*
+**/
 .contact {
   background-color: #323232;
-  padding-top: 150px;
+  padding-top: 70px;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 60% 30%;
+      grid-template-rows: 10% 60% 30%;
 }
 
 .contact-title {
@@ -12,8 +21,14 @@
   font-weight: 500;
 }
 
+@media (max-width: 1024px) {
+  .contact-title {
+    font-size: 2.3em;
+  }
+}
+
 .contact > form {
-  margin-top: 50px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +44,14 @@
           flex-direction: column;
   position: relative;
   top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .contact > form {
+    top: 0;
+    margin-top: 0;
+  }
 }
 
 .footer {
@@ -96,6 +119,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .submit {
+    font-size: 1em;
+  }
+}
+
 .submit:hover {
   border: 2px solid #f30067;
   background-color: #323232;
@@ -119,6 +148,22 @@
   font-size: 1em;
   color: #08d9d6;
   background-color: #262626;
+}
+
+@media (max-width: 1024px) {
+  .name,
+  .eMail,
+  .message {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .name,
+  .eMail,
+  .message {
+    width: 45%;
+  }
 }
 
 .name:focus,
@@ -154,11 +199,5 @@ input:-webkit-autofill:active {
 
 .message {
   height: 150px;
-}
-
-.swal-text,
-.swal-button,
-.swal-modal {
-  background-color: transparent;
 }
 /*# sourceMappingURL=Contact.css.map */

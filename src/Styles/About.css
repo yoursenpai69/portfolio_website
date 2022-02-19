@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap");
+/**
+*
+* Testing
+*
+**/
 .about {
   background-color: #323232;
+  padding-top: 50px;
 }
 
 .about-title {
@@ -11,12 +17,25 @@
   font-weight: 500;
 }
 
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 2.3em;
+  }
+}
+
 .about-cont {
   font-size: 1.5em;
   font-weight: 400;
   margin: 50px 0;
   padding: 0;
   text-align: center;
+  color: #08d9d6;
+}
+
+@media (max-width: 1024px) {
+  .about-cont {
+    font-size: 1.3em;
+  }
 }
 
 .diff-rec {
@@ -30,6 +49,13 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  .diff-rec {
+    width: 99%;
+    height: 550px;
+  }
 }
 
 .col-1,
@@ -56,6 +82,12 @@
   background-color: #262626;
 }
 
+@media (max-width: 1024px) {
+  .col-title {
+    font-size: 1.4em;
+  }
+}
+
 .svg-res,
 .svg-cre,
 .svg-dyn {
@@ -65,8 +97,23 @@
   margin-top: 80px;
 }
 
+@media (max-width: 1024px) {
+  .svg-res,
+  .svg-cre,
+  .svg-dyn {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 .svg-dyn {
   margin-top: 25px;
+}
+
+@media (max-width: 1024px) {
+  .svg-dyn {
+    margin-top: 32px;
+  }
 }
 
 .col-subs {
@@ -74,6 +121,14 @@
   background-color: #262626;
   color: #f30067;
   margin-top: 10px;
+  font-size: 1.5em;
+}
+
+@media (max-width: 1024px) {
+  .col-subs {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
 }
 
 .sub-exp {
@@ -83,6 +138,14 @@
   color: #eaeaea;
 }
 
+@media (max-width: 1024px) {
+  .sub-exp {
+    font-size: 0.85em;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
 .lang,
 .dev,
 .oth {
@@ -90,6 +153,16 @@
   background-color: #262626;
   color: #f30067;
   margin-top: 30px;
+  font-size: 1.5em;
+}
+
+@media (max-width: 1024px) {
+  .lang,
+  .dev,
+  .oth {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
 }
 
 .dev-list {
@@ -103,5 +176,12 @@
   margin-top: 10px;
   font-size: 1.1em;
   color: #eaeaea;
+}
+
+@media (max-width: 1024px) {
+  .dev-list > li {
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
 }
 /*# sourceMappingURL=About.css.map */

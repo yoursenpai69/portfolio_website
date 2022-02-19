@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap");
+/**
+*
+* Testing
+*
+**/
 @-webkit-keyframes bounce {
   50% {
     -webkit-transform: translateY(-15px);
@@ -12,21 +17,54 @@
   }
 }
 
-.intro {
-  background-color: #323232;
-}
-
-p {
+.text-cont > p {
   color: #08d9d6;
   font-size: 2.5em;
   text-align: center;
   letter-spacing: -1px;
   font-weight: 500;
-  padding: 370px 0;
+  -webkit-transform: translateY(-40%);
+  transform: translateY(40%);
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .text-cont > p {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-cont > p {
+    font-size: 2.05em;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(40%);
+  }
 }
 
 .text-cont {
   height: 100vh;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1366px) {
+  .text-cont {
+    width: 70%;
+  }
 }
 
 .arrow-div {
@@ -39,12 +77,13 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
 
 .arrow {
   color: #f30067;
-  bottom: 0;
-  bottom: 50px;
   width: 50px;
   height: 50px;
   -webkit-animation: bounce 1200ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -61,6 +100,7 @@ p {
       -ms-flex: 0.6;
           flex: 0.6;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +111,8 @@ p {
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 100vh;
+  background-color: #323232;
+  max-width: 100%;
 }
 
 .intro::-webkit-scrollbar {
@@ -82,6 +124,6 @@ p {
 }
 
 .sections > * {
-  height: 100vh;
+  height: 120vh;
 }
 /*# sourceMappingURL=Intro.css.map */

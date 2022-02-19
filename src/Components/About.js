@@ -80,15 +80,15 @@ const About = () => {
           <h2 className="lang">Languages</h2>
           <div className="list">
             <ul className="dev-list">
-              <li>React.js</li>
-              <li>Node.js</li>
-              <li>Git</li>
-              <li>Github</li>
-              <li>Figma</li>
-              <li>Bootstrap</li>
-              <li>Firebase</li>
-              <li>Colab</li>
-              <li>Jupyter</li>
+              <li>Python</li>
+              <li>Javascript</li>
+              <li>C</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Sass</li>
+              <li>SQL</li>
             </ul>
           </div>
         </div>
@@ -159,15 +159,15 @@ const About = () => {
           <h2 className="dev">Dev Tools</h2>
           <div className="list">
             <ul className="dev-list">
-              <li>Python</li>
-              <li>Javascript</li>
-              <li>C</li>
-              <li>C++</li>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Sass</li>
-              <li>SQL</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Git</li>
+              <li>Github</li>
+              <li>Figma</li>
+              <li>Bootstrap</li>
+              <li>Firebase</li>
+              <li>Colab</li>
+              <li>Jupyter</li>
             </ul>
           </div>
         </div>

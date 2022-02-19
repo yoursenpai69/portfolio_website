@@ -1,6 +1,8 @@
 @import "../Styles/Variables/Variables.scss";
+@import "../Styles/breakpoints.scss";
 .about {
   background-color: $prim-black;
+  padding-top: 50px;
 }
 .about-title {
   margin-top: 50px;
@@ -8,6 +10,9 @@
   color: $prim-pink;
   font-size: 2.5em;
   font-weight: 500;
+  @include media("<=laptop") {
+    font-size: 2.3em;
+  }
 }
 .about-cont {
   font-size: 1.5em;
@@ -15,14 +20,21 @@
   margin: 50px 0;
   padding: 0;
   text-align: center;
+  color: $prim-teal;
+  @include media("<=laptop") {
+    font-size: 1.3em;
+  }
 }
 .diff-rec {
   margin-top: 20px;
   display: inline-block;
   background-color: $sec-black;
-
   border-radius: 20px;
   width: 100%;
+  @include media("<=laptop") {
+    width: 99%;
+    height: 550px;
+  }
   height: 670px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -47,32 +59,51 @@
   font-size: 1.8em;
   margin-top: 20px;
   background-color: $sec-black;
+  @include media("<=laptop") {
+    font-size: 1.4em;
+  }
 }
 
 .svg-res,
 .svg-cre,
 .svg-dyn {
   background-color: transparent;
-
   display: block;
   margin: auto;
   margin-top: 80px;
+  @include media("<=laptop") {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .svg-dyn {
   margin-top: 25px;
+  @include media("<=laptop") {
+    margin-top: 32px;
+  }
 }
 .col-subs {
   font-weight: 400;
   background-color: $sec-black;
   color: $prim-pink;
   margin-top: 10px;
+  font-size: 1.5em;
+  @include media("<=laptop") {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
 }
 .sub-exp {
   background-color: $sec-black;
   text-align: center;
   margin-top: 20px;
   color: $prim-white;
+  @include media("<=laptop") {
+    font-size: 0.85em;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
 .lang,
 .dev,
@@ -81,6 +112,11 @@
   background-color: $sec-black;
   color: $prim-pink;
   margin-top: 30px;
+  font-size: 1.5em;
+  @include media("<=laptop") {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
 }
 .dev-list {
   margin-top: 10px;
@@ -92,4 +128,8 @@
   margin-top: 10px;
   font-size: 1.1em;
   color: $prim-white;
+  @include media("<=laptop") {
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
 }

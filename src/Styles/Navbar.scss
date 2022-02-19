@@ -1,8 +1,12 @@
 @import "../Styles/Variables/Variables.scss";
+@import "../Styles/breakpoints.scss";
 .navbar {
   flex: 0.2;
   z-index: 1;
   background-color: $prim-black;
+}
+.hamburger {
+  display: none;
 }
 .navbar-links {
   float: right;
@@ -17,6 +21,10 @@
   position: fixed;
   right: 0;
   z-index: 1;
+  @include media("<=laptop") {
+    font-size: 1.2em;
+    margin-right: 40px;
+  }
 }
 .nav-link {
   text-decoration: none;
@@ -43,6 +51,9 @@
   top: 0;
   right: 0;
   margin-right: 50px;
+  @include media("<=laptop") {
+    margin-right: 10px;
+  }
 }
 .line-main {
   stroke-width: 3px;
