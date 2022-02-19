@@ -42,6 +42,12 @@
   }
 }
 
+@media (max-width: 1366px) and (min-width: 1025px) {
+  .text-cont > p {
+    font-size: 2.3em;
+  }
+}
+
 .text-cont {
   height: 100vh;
   width: 90%;

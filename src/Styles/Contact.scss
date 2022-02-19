@@ -18,19 +18,13 @@
   }
 }
 .contact > form {
-  margin-top: 10px;
-  @include media("<=laptop") {
-  }
+  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: 20px;
-  @include media("<=laptop") {
-    top: 0;
-    margin-top: 0;
-  }
+  top: 0;
   margin-bottom: 10px;
 }
 .footer {

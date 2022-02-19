@@ -1,11 +1,17 @@
 @import "../Styles/Variables/Variables.scss";
 @import "../Styles/breakpoints.scss";
 .work {
+  padding-top: 100px;
+  @include media("<=laptop") {
+    padding-top: 0;
+  }
+  @include media("<=desktop", ">laptop") {
+    margin-top: 250px;
+  }
   position: relative;
   background-color: $prim-black;
 }
 .work-title {
-  margin-top: 100px;
   text-align: center;
   color: $prim-pink;
   font-size: 2.5em;
@@ -23,11 +29,21 @@
   position: absolute;
   left: 50%;
   top: 50%;
+
   transform: translate(-50%, -50%);
   @include media("<=laptop") {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+  }
+  @include media("<=Ldesktop", ">laptop") {
+    gap: 20px;
+  }
+  @include media("<=desktop", ">laptop") {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 60px;
   }
   gap: 30px;
 }
@@ -39,8 +55,28 @@
   position: relative;
   border-radius: 15px;
   @include media("<=laptop") {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
+  }
+  @include media("<=Ldesktop", ">laptop") {
+    height: 260px;
+    width: 260px;
+  }
+}
+
+.proj-grid {
+  background-color: $sec-black;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border-radius: 15px;
+  @include media("<=laptop") {
+    height: 220px;
+    width: 220px;
+  }
+  @include media("<=Ldesktop", ">laptop") {
+    height: 260px;
+    width: 260px;
   }
 }
 
@@ -54,8 +90,11 @@
   top: 70px;
   margin-left: 20px;
   @include media("<=laptop") {
-    font-size: 1.3em;
+    font-size: 1.2em;
     top: 60px;
+  }
+  @include media("<=Ldesktop", ">laptop") {
+    font-size: 1.3em;
   }
 }
 
@@ -72,18 +111,10 @@
   color: $prim-teal;
   @include media("<=laptop") {
     font-size: 0.8em;
-    top: 120px;
+    top: 115px;
   }
-}
-.proj-grid {
-  background-color: $sec-black;
-  height: 300px;
-  width: 300px;
-  position: relative;
-  border-radius: 15px;
-  @include media("<=laptop") {
-    height: 250px;
-    width: 250px;
+  @include media("<=Ldesktop", ">laptop") {
+    font-size: 1em;
   }
 }
 
@@ -96,6 +127,13 @@
   background-color: $sec-black;
   top: 70px;
   margin-left: 20px;
+  @include media("<=laptop") {
+    font-size: 1.2em;
+    top: 60px;
+  }
+  @include media("<=Ldesktop", ">laptop") {
+    font-size: 1.3em;
+  }
 }
 
 .proj-grid > p {
@@ -113,6 +151,9 @@
     font-size: 0.8em;
     top: 160px;
   }
+  @include media("<=Ldesktop", ">laptop") {
+    font-size: 1em;
+  }
 }
 
 .dep-bot {
@@ -124,7 +165,10 @@
   overflow: hidden;
   list-style-type: none;
   @include media("<=laptop") {
-    bottom: -30px;
+    bottom: 10px;
+  }
+  @include media("<=Ldesktop", ">laptop") {
+    bottom: 10px;
   }
 }
 
@@ -140,6 +184,9 @@
     font-size: 0.8em;
     margin-right: 10px;
   }
+  @include media("<=Ldesktop", ">laptop") {
+    font-size: 0.95em;
+  }
 }
 .proj-folder,
 .proj-git,
@@ -150,22 +197,19 @@
   @include media("<=laptop") {
     transform: scale(0.8);
   }
+  @include media("<=Ldesktop", ">laptop") {
+    transform: scale(0.9);
+  }
 }
 .proj-ext {
   right: 40px;
   margin-right: 20px;
   margin-top: 20px;
-  @include media("<=laptop") {
-    margin-right: -30px;
-  }
 }
 .proj-git {
   right: 0;
   margin-right: 20px;
   margin-top: 20px;
-  @include media("<=laptop") {
-    margin-right: -30px;
-  }
 }
 .proj-folder {
   left: 0;
@@ -197,6 +241,9 @@
   top: 60px;
   @include media("<=laptop") {
     font-size: 1.4em;
+  }
+  @include media("<=Ldesktop", ">laptop") {
+    font-size: 1.6em;
   }
 }
 .git-hover {
@@ -233,5 +280,8 @@
   bottom: 95px;
   @include media("<=laptop") {
     left: 110px;
+  }
+  @include media("<=Ldesktop", ">laptop") {
+    left: 120px;
   }
 }
