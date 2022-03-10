@@ -13,6 +13,9 @@
   @include media("<=laptop") {
     font-size: 2.3em;
   }
+  @include media("<=bigPhone") {
+    font-size: 1.8em;
+  }
 }
 .about-cont {
   font-size: 1.5em;
@@ -23,6 +26,11 @@
   color: $prim-teal;
   @include media("<=laptop") {
     font-size: 1.3em;
+  }
+  @include media("<=bigPhone") {
+    font-size: 1em;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .diff-rec {
@@ -49,10 +57,10 @@
   border: $prim-pink 1px solid;
 }
 .col-1 {
-  border-top-left-radius: 30px;
+  border-top-left-radius: 20px;
 }
 .col-3 {
-  border-top-right-radius: 30px;
+  border-top-right-radius: 20px;
 }
 .col-title {
   color: $prim-pink;
@@ -61,6 +69,9 @@
   background-color: $sec-black;
   @include media("<=laptop") {
     font-size: 1.4em;
+  }
+  @include media("<=bigPhone") {
+    font-size: 1.15em;
   }
 }
 
@@ -75,12 +86,19 @@
     width: 120px;
     height: 120px;
   }
+  @include media("<=bigPhone") {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .svg-dyn {
   margin-top: 25px;
   @include media("<=laptop") {
     margin-top: 32px;
+  }
+  @include media("<=bigPhone") {
+    margin-top: 37px;
   }
 }
 .col-subs {
@@ -93,14 +111,24 @@
     font-size: 1.2em;
     margin-top: 0;
   }
+  @include media("<=bigPhone") {
+    font-size: 1.1em;
+    margin-top: 0;
+  }
 }
 .sub-exp {
   background-color: $sec-black;
+  font-weight: 400;
   text-align: center;
   margin-top: 20px;
   color: $prim-white;
   @include media("<=laptop") {
     font-size: 0.85em;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  @include media("<=bigPhone") {
+    font-size: 0.75em;
     margin-right: 5px;
     margin-left: 5px;
   }
@@ -117,6 +145,10 @@
     font-size: 1.2em;
     margin-top: 20px;
   }
+  @include media("<=bigPhone") {
+    font-size: 1.1em;
+    margin-top: 20px;
+  }
 }
 .dev-list {
   margin-top: 10px;
@@ -130,6 +162,10 @@
   color: $prim-white;
   @include media("<=laptop") {
     font-size: 0.9em;
+    margin-top: 5px;
+  }
+  @include media("<=bigPhone") {
+    font-size: 0.85em;
     margin-top: 5px;
   }
 }

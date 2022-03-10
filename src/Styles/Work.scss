@@ -10,6 +10,9 @@
   }
   position: relative;
   background-color: $prim-black;
+  @include media("<=bigPhone") {
+    height: 170vh;
+  }
 }
 .work-title {
   text-align: center;
@@ -20,6 +23,10 @@
     margin-top: 250px;
     font-size: 2.3em;
   }
+  @include media("<=bigPhone") {
+    margin-top: 250px;
+    font-size: 2.1em;
+  }
 }
 
 .projects {
@@ -29,8 +36,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%);
+  gap: 30px;
   @include media("<=laptop") {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -45,7 +52,15 @@
     gap: 20px;
     margin-top: 60px;
   }
-  gap: 30px;
+  @include media("<=bigPhone") {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    width: 100%;
+    left: 65%;
+    top: 500px;
+  }
 }
 
 .proj-cont {
@@ -54,6 +69,7 @@
   width: 300px;
   position: relative;
   border-radius: 15px;
+
   @include media("<=laptop") {
     height: 220px;
     width: 220px;
@@ -61,6 +77,10 @@
   @include media("<=Ldesktop", ">laptop") {
     height: 260px;
     width: 260px;
+  }
+  @include media("<=bigPhone") {
+    height: 270px;
+    width: 100%;
   }
 }
 
@@ -78,6 +98,10 @@
     height: 260px;
     width: 260px;
   }
+  @include media("<=bigPhone") {
+    height: 270px;
+    width: 70%;
+  }
 }
 
 .proj-cont > h2 {
@@ -94,6 +118,9 @@
     top: 60px;
   }
   @include media("<=Ldesktop", ">laptop") {
+    font-size: 1.3em;
+  }
+  @include media("<=bigPhone") {
     font-size: 1.3em;
   }
 }
@@ -115,6 +142,9 @@
   }
   @include media("<=Ldesktop", ">laptop") {
     font-size: 1em;
+  }
+  @include media("<=bigPhone") {
+    font-size: 0.9em;
   }
 }
 
@@ -154,6 +184,9 @@
   @include media("<=Ldesktop", ">laptop") {
     font-size: 1em;
   }
+  @include media("<=bigPhone") {
+    font-size: 0.9em;
+  }
 }
 
 .dep-bot {
@@ -186,6 +219,9 @@
   }
   @include media("<=Ldesktop", ">laptop") {
     font-size: 0.95em;
+  }
+  @include media("<=bigPhone") {
+    font-size: 0.9em;
   }
 }
 .proj-folder,
@@ -245,6 +281,9 @@
   @include media("<=Ldesktop", ">laptop") {
     font-size: 1.6em;
   }
+  @include media("<=bigPhone") {
+    font-size: 1.5em;
+  }
 }
 .git-hover {
   z-index: 2;
@@ -267,6 +306,9 @@
   @include media("<=laptop") {
     right: 100px;
   }
+  @include media("<=bigPhone") {
+    right: 70px;
+  }
 }
 .hover2 > img {
   height: 50%;
@@ -283,5 +325,8 @@
   }
   @include media("<=Ldesktop", ">laptop") {
     left: 120px;
+  }
+  @include media("<=bigPhone") {
+    left: 125px;
   }
 }

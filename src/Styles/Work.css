@@ -22,6 +22,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .work {
+    height: 170vh;
+  }
+}
+
 .work-title {
   text-align: center;
   color: #f30067;
@@ -33,6 +39,13 @@
   .work-title {
     margin-top: 250px;
     font-size: 2.3em;
+  }
+}
+
+@media (max-width: 450px) {
+  .work-title {
+    margin-top: 250px;
+    font-size: 2.1em;
   }
 }
 
@@ -77,6 +90,20 @@
   }
 }
 
+@media (max-width: 450px) {
+  .projects {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    width: 100%;
+    left: 65%;
+    top: 500px;
+  }
+}
+
 .proj-cont {
   background-color: #262626;
   height: 300px;
@@ -96,6 +123,13 @@
   .proj-cont {
     height: 260px;
     width: 260px;
+  }
+}
+
+@media (max-width: 450px) {
+  .proj-cont {
+    height: 270px;
+    width: 100%;
   }
 }
 
@@ -121,6 +155,13 @@
   }
 }
 
+@media (max-width: 450px) {
+  .proj-grid {
+    height: 270px;
+    width: 70%;
+  }
+}
+
 .proj-cont > h2 {
   color: #f30067;
   font-weight: 400;
@@ -140,6 +181,12 @@
 }
 
 @media (max-width: 1630px) and (min-width: 1025px) {
+  .proj-cont > h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 450px) {
   .proj-cont > h2 {
     font-size: 1.3em;
   }
@@ -168,6 +215,12 @@
 @media (max-width: 1630px) and (min-width: 1025px) {
   .proj-cont > p {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .proj-cont > p {
+    font-size: 0.9em;
   }
 }
 
@@ -221,6 +274,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .proj-grid > p {
+    font-size: 0.9em;
+  }
+}
+
 .dep-bot {
   position: absolute;
   bottom: 20px;
@@ -263,6 +322,12 @@
 @media (max-width: 1630px) and (min-width: 1025px) {
   .dep-bot > li {
     font-size: 0.95em;
+  }
+}
+
+@media (max-width: 450px) {
+  .dep-bot > li {
+    font-size: 0.9em;
   }
 }
 
@@ -348,6 +413,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .proj-hover > h2 {
+    font-size: 1.5em;
+  }
+}
+
 .git-hover {
   z-index: 2;
   background-color: transparent;
@@ -378,6 +449,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .ext-hover {
+    right: 70px;
+  }
+}
+
 .hover2 > img {
   height: 50%;
 }
@@ -403,6 +480,13 @@
   .hover2 .git-hover,
   .hover3 .git-hover {
     left: 120px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hover2 .git-hover,
+  .hover3 .git-hover {
+    left: 125px;
   }
 }
 /*# sourceMappingURL=Work.css.map */

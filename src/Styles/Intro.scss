@@ -28,6 +28,9 @@
   @include media("<=desktop", ">laptop") {
     font-size: 2.3em;
   }
+  @include media("<=bigPhone") {
+    font-size: 1.8em;
+  }
 }
 .text-cont {
   height: 100vh;
@@ -72,6 +75,9 @@
   height: 100vh;
   background-color: $prim-black;
   max-width: 100%;
+  @include media("<=tablet") {
+    flex: 1;
+  }
 }
 
 .intro::-webkit-scrollbar {
@@ -82,4 +88,121 @@
   > * {
     height: 120vh;
   }
+}
+.mob-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: $sec-black;
+  z-index: 5;
+}
+.nav-list {
+  list-style-type: none;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+  background-color: $sec-black;
+}
+.mob-nav-link {
+  text-decoration: none;
+  color: $sakura;
+  font-size: 1.15em;
+}
+.mob-nav-item {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid $prim-white;
+  padding: 10px 0;
+}
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.hamburger > div {
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.hamburger.open {
+  .top {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 4px;
+    left: 8px;
+  }
+  .middle {
+    width: 0%;
+    opacity: 0;
+  }
+  .bottom {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 18px;
+    left: 8px;
+  }
+}
+.top {
+  height: 2px;
+  width: 20px;
+  background: $sakura;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+.middle {
+  top: 8px;
+  height: 2px;
+  width: 20px;
+  background: $sakura;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.bottom {
+  top: 16px;
+  height: 2px;
+  width: 20px;
+  background: $sakura;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
 }

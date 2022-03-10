@@ -12,10 +12,6 @@
   background-color: #323232;
 }
 
-.hamburger {
-  display: none;
-}
-
 .navbar-links {
   float: right;
   list-style: none;

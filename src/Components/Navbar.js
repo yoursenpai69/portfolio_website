@@ -18,11 +18,6 @@ const Navbar = () => {
       <Breakpoint className="link-comp" medium up>
         <div className="navbar">
           <nav className="navbar-nav">
-            <div className="hamburger">
-              <div className="line"></div>
-              <div className="line"></div>
-              <div className="line"></div>
-            </div>
             <div className="nav-line">
               <svg height="300" width="100">
                 <line

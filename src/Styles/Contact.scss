@@ -42,6 +42,10 @@
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
+  @include media("<=bigPhone") {
+    font-size: 1.3em;
+    bottom: 20px;
+  }
 }
 .footer > h3 {
   position: absolute;
@@ -51,6 +55,10 @@
   font-weight: 400;
   font-size: 1.1em;
   width: 100%;
+  @include media("<=bigPhone") {
+    font-size: 0.9em;
+    bottom: 10px;
+  }
 }
 .to-top {
   color: $sakura;
