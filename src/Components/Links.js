@@ -36,7 +36,6 @@ const Links = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               <Icon
                 icon="akar-icons:instagram-fill"
                 width="30"

@@ -60,6 +60,62 @@ const Intro = () => {
                     Resume
                   </a>
                 </li>
+                <li className="mob-nav-item">
+                  <div className="cont-links">
+                    <a
+                      href="https://codepen.io/yoursenpai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon
+                        icon="akar-icons:codepen-fill"
+                        width="23"
+                        height="23"
+                        className="link-icon"
+                        id="codepen"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/yoursenpai69/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon
+                        icon="akar-icons:instagram-fill"
+                        width="23"
+                        height="23"
+                        className="link-icon"
+                        id="instagram"
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/vijaya-raghavan-v-3190b41a3/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon
+                        icon="akar-icons:linkedin-fill"
+                        width="23"
+                        height="23"
+                        className="link-icon"
+                        id="linkedin"
+                      />
+                    </a>
+                    <a
+                      href="https://github.com/yoursenpai69"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon
+                        icon="akar-icons:github-fill"
+                        width="23"
+                        height="23"
+                        className="link-icon"
+                        id="github"
+                      />
+                    </a>
+                  </div>
+                </li>
               </ul>
             )}
           </nav>

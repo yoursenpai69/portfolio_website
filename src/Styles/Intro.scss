@@ -119,6 +119,9 @@
   border-top: 1px solid $prim-white;
   padding: 10px 0;
 }
+.mob-nav-item:nth-child(5) {
+  padding: 0;
+}
 .hamburger {
   cursor: pointer;
   display: flex;
@@ -205,4 +208,12 @@
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
+}
+
+.cont-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0;
 }

@@ -47,6 +47,12 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .contact > form {
+    margin-bottom: 70px;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,6 +67,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .footer > h2 {
@@ -103,6 +110,14 @@
   position: absolute;
   bottom: 100px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .to-top {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    bottom: 150px;
+  }
 }
 
 .to-top:hover {
@@ -206,5 +221,17 @@ input:-webkit-autofill:active {
 
 .message {
   height: 150px;
+}
+
+.cont-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 80px;
 }
 /*# sourceMappingURL=Contact.css.map */
